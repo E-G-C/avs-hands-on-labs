@@ -7,7 +7,7 @@ description: >
 ---
 
 
-## Introduction
+## Introduction Module 1
 
   Azure VMware Solution offers a private cloud environment accessible from
   On-Premises and Azure-based resources. Services such as Azure ExpressRoute, VPN
