@@ -16,11 +16,15 @@ jobs:
     name: Build and Deploy Job
     steps:
 
-      - uses: actions/setup-node@v3
+
+      - name: install Node.js 14.x
+        uses: actions/setup-node@v3
         with:
           node-version: 14
           cache: 'npm'
-      - run: npm install postcss-cli
+       
+      - name: Install docsy prerequisites
+        run: npm install -g postcss-cli autoprefixer
 
       - uses: actions/checkout@v2
         with:
