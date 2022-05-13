@@ -22,13 +22,15 @@ jobs:
         with:
           node-version: 14
           cache: 'npm'
-       
-      - name: Install docsy prerequisites
-        run: npm install -g postcss-cli autoprefixer
+
 
       - uses: actions/checkout@v2
         with:
           submodules: true
+           
+      - name: Install docsy prerequisites
+        run: npm install -g postcss-cli autoprefixer
+        
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
