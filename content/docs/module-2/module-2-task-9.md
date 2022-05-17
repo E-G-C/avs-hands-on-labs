@@ -11,7 +11,7 @@ description: >
 VMware HCX Connector deploys a subset of virtual appliances (automated) that
 require multiple IP segments. You’ll create four network profiles.
 
-**Note**: Customer’s environments may vary and may not have separate networks.
+>Customer’s environments may vary and may not have separate networks.
 
 -   Management
 
@@ -50,11 +50,13 @@ phase](https://docs.microsoft.com/en-us/azure/azure-vmware/plan-private-cloud-de
 
     Management Network Profile
 
+
     | **Property**               | **Value**                       |
     |----------------------------|---------------------------------|
-    | Management Network IP      | 192.168.**Y**.10-192.168.**Y**.16 |
+    | Management Network IP      | 10.211.**X**.10-10.211.**X**.16 |
     | Prefix Length              | 27                              |
-    | Management Network Gateway | 192.168.**Y**.1                  |
+    | Management Network Gateway | 10.211.**X**.1                  |
+             |
 
     ![](../../media/1c9f63a7f34234d5f5ca099053d5b2be.png)
 
@@ -67,27 +69,27 @@ phase](https://docs.microsoft.com/en-us/azure/azure-vmware/plan-private-cloud-de
 
     | **Property**            | **Value**                       |
     |-------------------------|---------------------------------|
-    | vMotion Network IP      | 192.168.**Y**.74-192.168.**Y**.77 |
+    | vMotion Network IP      | 10.211.**X**.74-10.211.**X**.77 |
     | Prefix Length           | 27                              |
-    | vMotion Network Gateway | 192.168.**Y**.65                |
+    | vMotion Network Gateway | 10.211.**X**.65’                |
     | DNS                     | 1.1.1.1                         |
 
     Replication Network Profile
 
     | **Property**                | **Value**                         |
     |-----------------------------|-----------------------------------|
-    | Replication IP              | 192.168.**Y**.106-192.168.**Y**.109 |
+    | Replication IP              | 10.211.**X**.106-10.211.**X**.109 |
     | Prefix Length               | 27                                |
-    | Replication Network Gateway | 192.168.**Y**.97                   |
+    | Replication Network Gateway | 10.211.**X**.97                   |
     | DNS                         | 1.1.1.1                           |
 
     Uplink Network Profile
 
     | **Property**           | **Value**                       |
     |------------------------|---------------------------------|
-    | Uplink Network IP      | 192.168.**Y**.34-192.168.**Y**.40 |
+    | Uplink Network IP      | 10.211.**X**.34-10.211.**X**.40 |
     | Prefix Length          | 28                              |
-    | Uplink Network Gateway | 192.168.**Y**.33                 |
+    | Uplink Network Gateway | 10.211.**X**.33                 |
     | DNS                    | 1.1.1.1                         |
 
     ![](../../media/d8a7f813510d8141d0b1277071c2e94e.png)
