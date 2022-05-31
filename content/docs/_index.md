@@ -1,6 +1,6 @@
 ---
-title: "Getting Started"
-linkTitle: "Getting Started"
+title: "Workshop Guide"
+linkTitle: "Workshop Guide"
 weight: 20
 menu:
   main:
