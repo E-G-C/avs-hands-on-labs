@@ -4,20 +4,55 @@ linkTitle = "AVS Hub"
 
 +++
 
-{{< blocks/cover title="👇🏻" image_anchor="top" height="full" color="orange" >}}
-<div class="mx-auto">
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
-		Access the Guide <i class="fas fa-arrow-alt-circle-right ml-2"></i>
-	</a>
-	<!-- <a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/google/docsy-example">
-		Download <i class="fab fa-github ml-2 "></i> -->
-	</a>
-	<!-- <p class="lead mt-5">Porridge temperature assessment - in the cloud!</p> -->
-	<!-- {{< blocks/link-down color="info" >}} -->
-</div>
-{{< /blocks/cover >}}
+{{< blocks/cover  title="👇🏻" image_anchor="top" height="full" color="orange">}}
 
-<!-- 
+	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref " /docs">}}">Access the Guide<i
+			class="fas fa-arrow-alt-circle-right ml-2"></i></a><br>
+	<div style="float: center; text-align: center">
+		<p> We are part of the Global Partner Solution team in the U.S, focused on AVS skilling and enablement</p>
+</div>
+
+	<script>
+		var contents = new Array()
+
+		document.write("<table style='width:100%''><tr>");
+		contents[0] = `<td><img border="0" src="./images/roberto2.png">
+			<br>Roberto Canton<div style="float: left; text-align: left">
+				Principal Cloud Solution  Architect</div></td>`
+
+		contents[1] = `<td><img border="0" src="./images/husam.png">
+			<br>Husam Hilal<div style="float: left; text-align: left">
+				Senior Cloud Solution Architect</div></td>`
+
+		contents[2] = `<td><img border="0" src="./images/enrique.png">
+			<br>Enrique Gonzalez<div style="float: left; text-align: left">
+				Senior Cloud Solution Architect</div></td>`
+
+
+		var i = 0
+		//variable used to contain controlled random number 
+		var random
+		var spacing = "<br>"
+		//while all of array elements haven't been cycled thru
+		document.write(spacing)
+		while (i < contents.length) {
+			//generate random num between 0 and arraylength-1
+			random = Math.floor(Math.random() * contents.length)
+			//if element hasn't been marked as "selected"
+			if (contents[random] != "selected") {
+				document.write(contents[random] + spacing)
+				//mark element as selected
+				contents[random] = "selected"
+				i++
+			}
+		}
+
+		document.write("</tr></table>")
+	</script>
+
+	{{< /blocks/cover>}}
+
+		<!-- 
 {{% blocks/lead color="primary" %}}
 Goldydocs provides a single web UI providing visibility into porridge temperature, chair size, and bed softness metrics! You can even find out who's been eating **your** porridge.
 

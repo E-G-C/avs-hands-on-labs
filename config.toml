@@ -8,6 +8,7 @@ contentDir = "content/"
 # defaultContentLanguageInSubdir = false
 # Useful when translating.
 # enableMissingTranslationPlaceholders = true
+staticDir = ['static']
 
 enableRobotsTXT = true
 
