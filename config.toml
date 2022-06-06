@@ -220,3 +220,22 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
   [[module.imports]]
     path = "github.com/google/docsy/dependencies"
     disable = false    
+  [[module.imports]]
+    path = "c:\\work\\Hugo\\temp\\MyContent\\"
+    [[module.imports.mounts]]
+      source = "."
+      target = "content/mycontent"
+      type = "filesystem"
+      disable = false 
+  [[module.imports]]
+    path = "c:\\work\\Hugo\\avs-workshop-guide\\"
+    [[module.imports.mounts]]
+      source = "."
+      target = "content/docs"
+      type = "filesystem"
+      disable = false 
+    [[module.imports.mounts]]
+      source = "."
+      target = "content/docs"
+      type = "filesystem"
+      disable = false 
