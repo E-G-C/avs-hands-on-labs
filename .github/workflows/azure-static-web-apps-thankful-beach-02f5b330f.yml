@@ -14,17 +14,12 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
-    env:
-      # GOPRIVATE: github.com/E-G-C/avs-hands-on-labs/
-      GH_ACCESS_TOKEN: ${{ secrets.GH_ACTIONS_TOKEN }}
     steps:
 
 
       - uses: actions/checkout@v2
         with:
           submodules: true
-      # - run: git config --global url.https://$GH_ACCESS_TOKEN@github.com/.insteadOf https://github.com/  
-      - run: git config --global url."https://E-G-C:$GH_ACCESS_TOKEN@github.com".insteadOf "https://github.com"  
           
       - name: install Node.js 14.x
         uses: actions/setup-node@v3
