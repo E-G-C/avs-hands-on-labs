@@ -5,7 +5,6 @@
   "main": "none.js",
   "scripts": {
     "build": "hugo --verbose --gc --minify",
-    
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +20,6 @@
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.14",
-    "postcss-cli": "^9.0.2"
+    "postcss-cli": "^9.1.0"
   }
 }
