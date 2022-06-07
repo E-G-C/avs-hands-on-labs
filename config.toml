@@ -224,7 +224,5 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
     path = "github.com/E-G-C/avs-workshop-guide"
     disable = false
     [[module.imports.mounts]]
-      source = "."
+      source = "workshop-guide"
       target = "content/docs"
-      type = "filesystem"
-      
