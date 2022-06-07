@@ -226,3 +226,6 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
     [[module.imports.mounts]]
       source = "workshop-guide"
       target = "content/docs"
+    [[module.imports.mounts]]
+      source = "additional-resources"
+      target = "content/additional-resources"
