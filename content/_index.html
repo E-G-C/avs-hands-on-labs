@@ -2,9 +2,15 @@
 title : "AVS Hub "
 ---
 
-{{< blocks/cover  title="👇🏻" image_anchor="top" height="full" color="primary">}}
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs">}}">Workshop Guide<i class="fas fa-arrow-alt-circle-right ml-2"></i></a><br>
+{{% blocks/lead color="primary" %}}
+<h2 >Welcome to the AVS Hub!</h2>
+<p>This site offers a collection of resources for the AVS community</p>
+<p>meant to support <a href="about">our team's</a> work on AVS </p>
+{{% /blocks/lead %}}
+{{< blocks/cover   image_anchor="top" height="full" color="primary">}}
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs">}}">Workshop Guide<i class="fas fa-arrow-alt-circle-right ml-2"></i></a><br>
+<h2>Why AVS?</h2>
 {{< blocks/section color="dark" >}}
 {{% blocks/feature icon="fa-lightbulb" %}}
 Seamlessly move VMware-based workloads from your datacenter to Azure and integrate your VMware environment with Azure.
@@ -16,4 +22,5 @@ Azure VMware Solution provides you with private clouds built from dedicated bare
 Azure VMware Solution is a Microsoft service, verified by VMware, that runs on Azure infrastructure.
 {{% /blocks/feature %}}
 {{< /blocks/section >}}
+
 {{< /blocks/cover>}}
