@@ -5,114 +5,46 @@ menu:
     weight: 100
 ---
 
-{{< blocks/cover  title="👇🏻" image_anchor="top" height="full" color="primary">}}
-
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs">}}">Workshop Guide
-		<i class="fas fa-arrow-alt-circle-right ml-2"></i></a><br>
+{{< blocks/cover  title="About Our Team" image_anchor="top" height="full" color="primary">}}
+<br>
 	<div style="float: center; text-align: center">
 		<p> We are part of the Global Partner Solution team in the U.S, focused on AVS skilling and enablement</p>
 </div>
-
 	<script>
 		var contents = new Array()
 
 		document.write("<table style='width:100%''><tr>");
 		contents[0] = `<td><img border="0" src="roberto2.png">
-			<br><a href="https://www.linkedin.com/in/robertojcanton/"><img border="0" src="linkedin.svg">Roberto Canton</a><div style="float: left; text-align: left">
+			<br>		<a href="https://www.linkedin.com/in/robertojcanton/"	 style="color:#ffffff;">		<li-icon type="app-linkedin-bug-color-icon" size="large" role="img" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="white" class="mercado-match" width="24" height="24" focusable="false">
+				<path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+			  </svg></li-icon>Roberto Canton</a><div style="float: left; text-align: left">
 				Principal Cloud Solution  Architect
 				</div></td>`
 
 		contents[1] = `<td><img border="0" src="husam.png">
-			<br>Husam Hilal<div style="float: left; text-align: left">
+			<br><a href="https://www.linkedin.com/in/husamhilal/"	 style="color:#ffffff;">		<li-icon type="app-linkedin-bug-color-icon" size="large" role="img" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="white" class="mercado-match" width="24" height="24" focusable="false">
+				<path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+			  </svg></li-icon>Husam Hilal</a><div style="float: left; text-align: left">
 				Senior Cloud Solution Architect</div></td>`
 
 		contents[2] = `<td><img border="0" src="enrique.png">
-			<br>Enrique Gonzalez<div style="float: left; text-align: left">
-				Senior Cloud Solution Architect</div></td>`
-
+			<br><a href="https://www.linkedin.com/in/egc/"	 style="color:#ffffff;">		<li-icon type="app-linkedin-bug-color-icon" size="large" role="img" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="white" class="mercado-match" width="24" height="24" focusable="false">
+				<path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+			  </svg></li-icon>Enrique Gonzalez<div style="float: left; text-align: left">
+				Senior Cloud Solution Architect</a></div></td>`
 
 		var i = 0
-		//variable used to contain controlled random number 
 		var random
 		var spacing = "<br>"
-		//while all of array elements haven't been cycled thru
 		document.write(spacing)
 		while (i < contents.length) {
-			//generate random num between 0 and arraylength-1
 			random = Math.floor(Math.random() * contents.length)
-			//if element hasn't been marked as "selected"
 			if (contents[random] != "selected") {
 				document.write(contents[random] + spacing)
-				//mark element as selected
 				contents[random] = "selected"
 				i++
 			}
 		}
-
 		document.write("</tr></table>")
 	</script>
-
 	{{< /blocks/cover>}}
-
-		<!-- 
-{{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge temperature, chair size, and bed softness metrics! You can even find out who's been eating **your** porridge.
-
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example to create your own real websites with [Docsy](http://docsy.dev))
-{{% /blocks/lead %}}
-
-{{< blocks/section color="dark" >}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
-
-Please follow this space for updates!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-
-{{< /blocks/section >}}
-
-
-{{< blocks/section >}}
-<div class="col">
-<h1 class="text-center">This is the second Section</h1>
-</div>
-
-{{< /blocks/section >}}
-
-
-
-{{< blocks/section >}}
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-
-{{< /blocks/section >}}
-
-{{< blocks/section >}}
-
-<div class="col-12">
-<h1 class="text-center">This is another Section</h1>
-</div>
-
-{{< /blocks/section >}} -->
