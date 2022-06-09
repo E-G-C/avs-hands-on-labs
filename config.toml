@@ -221,8 +221,8 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
     path = "github.com/google/docsy/dependencies"
     disable = false
   [[module.imports]]
-    # path = "github.com/E-G-C/avs-workshop-guide"
-    path = "C:\\Work\\Hugo\\avs-workshop-guide\\"
+    path = "github.com/E-G-C/avs-workshop-guide"
+
     disable = false
     [[module.imports.mounts]]
       source = "workshop-guide"
