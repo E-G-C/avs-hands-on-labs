@@ -9,7 +9,7 @@ description: >
   connections with customers.
 ---
 
-{{% blocks/lead color="primary" %}} Differentiate your organization, demonstrate
+{{% blocks/lead color="white" %}} Differentiate your organization, demonstrate
 expertise, and build stronger connections with customers!
 {{< vimeo 626510751 >}}
 {{% /blocks/lead %}}
