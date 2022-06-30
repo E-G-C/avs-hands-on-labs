@@ -23,8 +23,3 @@ expertise, and build stronger connections with customers!
 (pdf file)
 {{% /blocks/feature %}}
 {{< /blocks/section >}}
-{{< blocks/section  color="dark" >}}
-<div class="col-12">
-<h3 class="text-center">Show your customers that you're uniquely qualified to migrating their VMware-based virtualized workloads to the cloud with the VMware-certified Azure VMware Solution.</h3>
-</div>{{< /blocks/section >}}
-{{< blocks/section  color="dark" >}}
