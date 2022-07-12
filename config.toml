@@ -70,7 +70,7 @@ anchor = "smart"
 [languages]
 [languages.en]
 title = "AVS Hub"
-description = "Your Azure VMware Solution Conection"
+description = "Your Azure VMware Solution Connection"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
